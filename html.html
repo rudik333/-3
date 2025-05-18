@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальное заявление</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .stamp {
+            position: absolute;
+            opacity: 0.8;
+            animation: float 3s ease-in-out infinite;
+        }
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-2xl p-8 rounded-lg shadow-xl border-l-4 border-blue-500 relative overflow-hidden">
+        <!-- Водяной знак -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-5">
+            <i class="fas fa-school text-gray-400 text-[300px]"></i>
+        </div>
+        
+        <!-- Шапка документа -->
+        <div class="flex justify-between items-center mb-8 border-b pb-4">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800">ОФИЦИАЛЬНОЕ ЗАЯВЛЕНИЕ</h1>
+                <p class="text-gray-500">№ 2023-11-21</p>
+            </div>
+            <div class="bg-blue-100 p-2 rounded">
+                <i class="fas fa-file-alt text-blue-500 text-3xl"></i>
+            </div>
+        </div>
+        
+        <!-- Адресат -->
+        <div class="mb-6">
+            <p class="text-gray-600 mb-1">Кому:</p>
+            <p class="text-xl font-semibold text-gray-800">Любимой маме</p>
+        </div>
+        
+        <!-- Основной текст -->
+        <div class="mb-8 text-gray-700 leading-relaxed">
+            <p class="mb-4">Уважаемая мама,</p>
+            
+            <p class="mb-4">Настоящим документом я хочу официально заявить, что во вторник в школу я не пойду по следующим веским причинам:</p>
+            
+            <ol class="list-decimal pl-5 space-y-3 mb-6">
+                <li><span class="font-semibold">Учебный материал освоен</span> - Я уже полностью прошел программу, которую будут изучать во вторник (подтверждающие документы прилагаются в виде пятёрки в дневнике).</li>
+                <li><span class="font-semibold">Профилактика переутомления</span> - По данным ВОЗ, дополнительный день отдыха повышает продуктивность на 37%.</li>
+                <li><span class="font-semibold">Научные исследования</span> - Учёные доказали, что спонтанные выходные улучшают эмоциональный интеллект.</li>
+                <li><span class="font-semibold">Подготовка к будущему</span> - Я планирую посвятить этот день углублённому изучению важных жизненных навыков (игра в кс 2 развивает стратегическое мышление).</li>
+                <li><span class="font-semibold">Технические работы</span> - Мой организм запланировал профилактические работы иммунной системы (возможен небольшой насморк).</li>
+                <li><span class="font-semibold">Экономия ресурсов</span> - Отсутствие одного ученика сэкономит школе электроэнергию и кислород (я за экологию!).</li>
+            </ol>
+            
+            <p class="mb-4">На основании вышеизложенного, прошу рассмотреть возможность моего отсутствия в школе во вторник как официальный учебный день.</p>
+            
+            <p>С уважением и надеждой на понимание,</p>
+        </div>
+        
+        <!-- Подпись -->
+        <div class="flex justify-end items-center mt-12">
+            <div class="text-center mr-6">
+                <div class="signature text-3xl text-blue-600 mb-1">Твой сын</div>
+                <div class="text-xs text-gray-500">Дата: 18.05</div>
+            </div>
+        </div>
+        
+        <!-- Печать -->
+        <div class="stamp right-10 bottom-10 transform rotate-12">
+            <div class="border-2 border-red-500 rounded-full w-24 h-24 flex items-center justify-center text-red-500 text-xs font-bold text-center px-1">
+                УТВЕРЖДАЮ<br>РЕБЁНОК ПРАВ
+            </div>
+        </div>
+        
+        <!-- Приложения -->
+        <div class="mt-8 pt-4 border-t text-sm text-gray-500">
+            <p>Приложения:</p>
+            <ol class="list-decimal pl-5">
+                <li>Свидетельство о рождении (подтверждает, что я ваш ребёнок и заслуживаю поблажек)</li>
+                <li>Фото грустных глаз (дополнительный аргумент)</li>
+            </ol>
+        </div>
+        
+        <!-- P.S. -->
+        <div class="mt-6 p-3 bg-yellow-50 rounded border border-yellow-200 text-sm">
+           
+        </div>
+    </div>
+</body>
+</html>
